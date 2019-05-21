@@ -1,0 +1,26 @@
+{
+  "name": "Notify",
+  "description": "Chrome platform app.",
+  "manifest_version": 2,
+  "version": "0.1",
+  "background": {
+    "scripts": [
+        "block.js",
+        "script.js"
+    ]
+},
+"browser_action": {
+    "default_title": "BMI",
+    "default_popup": "mobile.html"
+},
+"permissions": [
+    "tabs",
+    "storage",
+    "alarms",
+    "notifications",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*"
+],
+  "icons": { "128": "bmi.png" }
+}
